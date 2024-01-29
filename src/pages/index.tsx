@@ -1,10 +1,11 @@
 import { FormEvent, useState } from "react";
-import UserCredentials from "../utils/user-credentials.json";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
+
+import UserCredentials from "../utils/user-credentials.json";
 import Input from "@/components/Input";
 import Button from "@/components/Button";
-import toast from "react-hot-toast";
-import { setSessionStorage } from "@/utils/Localstorage";
+import { setSessionStorage } from "@/utils/sessionStorage";
 
 export default function Home() {
   const [name, setName] = useState("");

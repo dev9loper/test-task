@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
-
-import UserCredentials from "@/utils/user-credentials.json";
 import { useRouter } from "next/navigation";
-import Button from "@/components/Button";
-import { getSessionStorage, removeSessionStorage } from "@/utils/Localstorage";
+
+import { getSessionStorage, removeSessionStorage } from "@/utils/sessionStorage";
 
 const Home = () => {
   const { push: redirect } = useRouter();
